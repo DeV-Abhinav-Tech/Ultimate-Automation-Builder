@@ -2,10 +2,12 @@
   "name": "ultimate-automation-builder",
   "private": true,
   "version": "1.0.0",
-  "description": "Visual drag-and-drop workflow automation engine for AI tools, LLMs, and API integrations.",
+  "description": "Visual drag-and-drop workflow automation engine with Node.js backend server and Vercel serverless integration.",
   "type": "module",
+  "main": "server.js",
   "scripts": {
     "dev": "vite",
+    "start": "node server.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -13,6 +15,8 @@
   "dependencies": {
     "@types/canvas-confetti": "^1.9.0",
     "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
     "lucide-react": "^1.16.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -20,6 +24,8 @@
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/node": "^26.1.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
